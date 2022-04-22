@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{307985B0-201E-4ED8-8540-2964E2C95A49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>S036_OrderSkdApp</RootNamespace>
+    <AssemblyName>S036_OrderSkdApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Excel.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.C1Pdf.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.C1Zip.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.Win.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.BarCode.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.Win.Bitmap.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.C1Chart.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=a22e16972c085838" />
+    <Reference Include="C1.Win.C1Chart3D.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=a22e16972c085838" />
+    <Reference Include="C1.Win.C1Command.4, Version=4.0.20192.375, Culture=neutral, PublicKeyToken=e808566f358766d8" />
+    <Reference Include="C1.Win.C1Command.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=e808566f358766d8" />
+    <Reference Include="C1.Win.C1Document.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.C1DX.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.C1FlexGrid.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Input.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1InputPanel.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.Win.C1Ribbon.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.Win.C1Schedule.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1SuperTooltip.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1TileControl.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1TrueDBGrid.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=75ae3fb0e2b1e0da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.Calendar.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.FlexChart.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=3aa2920c09e0aefd" />
+    <Reference Include="C1.Win.FlexReport.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.FlexViewer.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.ImportServices.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.TreeView.4.5.2, Version=4.5.20192.375, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SansoBase">
+      <HintPath>.\SansoBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\EditorAF\SendMailMstEditor.cs" />
+    <Compile Include="Common\OtherAF\ControlAF.cs" />
+    <Compile Include="Common\OtherAF\InputCKAF.cs" />
+    <Compile Include="Common\OtherAF\IOFileEditor.cs" />
+    <Compile Include="Common\OtherAF\SelectDBAF.cs" />
+    <Compile Include="Common\OtherAF\StockMstEditor.cs" />
+    <Compile Include="Common\OtherAF\UnderstandingList.cs" />
+    <Compile Include="Forms\EOMProcess\F201E_OutDataParts\F201E_OutDataParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F201E_OutDataParts\F201E_OutDataParts.Designer.cs">
+      <DependentUpon>F201E_OutDataParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F201E_OutDataParts\F201E_OutDataPartsAF.cs" />
+    <Compile Include="Forms\EOMProcess\F202E_InsideTrans\F202E_InsideTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F202E_InsideTrans\F202E_InsideTrans.Designer.cs">
+      <DependentUpon>F202E_InsideTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F202E_InsideTrans\F202E_InsideTransAF.cs" />
+    <Compile Include="Forms\EOMProcess\F203E_OutProcessOsrc\F203E_OutProcessOsrc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F203E_OutProcessOsrc\F203E_OutProcessOsrc.Designer.cs">
+      <DependentUpon>F203E_OutProcessOsrc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F204E_NSupStockTrans\F204E_NSupStockTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F204E_NSupStockTrans\F204E_NSupStockTrans.Designer.cs">
+      <DependentUpon>F204E_NSupStockTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F204E_NSupStockTrans\F204E_NSupStockTransAF.cs" />
+    <Compile Include="Forms\EOMProcess\F205E_OutDataPartsExchange\F205E_OutDataPartsExchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F205E_OutDataPartsExchange\F205E_OutDataPartsExchange.Designer.cs">
+      <DependentUpon>F205E_OutDataPartsExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F206E_DelivAcceptanceRoCode\F206E_DelivAcceptanceRoCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F206E_DelivAcceptanceRoCode\F206E_DelivAcceptanceRoCode.Designer.cs">
+      <DependentUpon>F206E_DelivAcceptanceRoCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F207E_InsideAcceptanceParts\F207E_InsideAcceptanceParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F207E_InsideAcceptanceParts\F207E_InsideAcceptanceParts.Designer.cs">
+      <DependentUpon>F207E_InsideAcceptanceParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F208E_DelivAcceptanceDoCode\F208E_DelivAcceptanceDoCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F208E_DelivAcceptanceDoCode\F208E_DelivAcceptanceDoCode.Designer.cs">
+      <DependentUpon>F208E_DelivAcceptanceDoCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F216E_IntermediateAssemblyResult\F216E_IntermediateAssemblyResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F216E_IntermediateAssemblyResult\F216E_IntermediateAssemblyResult.Designer.cs">
+      <DependentUpon>F216E_IntermediateAssemblyResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F220E_InsideAcceptanceCancel\F220E_InsideAcceptanceCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F220E_InsideAcceptanceCancel\F220E_InsideAcceptanceCancel.Designer.cs">
+      <DependentUpon>F220E_InsideAcceptanceCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F223E_CancelNSupStockTrans\F223E_CancelNSupStockTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EOMProcess\F223E_CancelNSupStockTrans\F223E_CancelNSupStockTrans.Designer.cs">
+      <DependentUpon>F223E_CancelNSupStockTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Info\F002_DelivScheduleList\F002_DelivScheduleList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\F002_DelivScheduleList\F002_DelivScheduleList.Designer.cs">
+      <DependentUpon>F002_DelivScheduleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Info\F002_DelivScheduleList\F002_DelivScheduleListAF.cs" />
+    <Compile Include="Forms\Info\F003_NoDelivInfo\F003_NoDelivInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\F003_NoDelivInfo\F003_NoDelivInfo.Designer.cs">
+      <DependentUpon>F003_NoDelivInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Info\F003_NoDelivInfo\F003_NoDelivInfoAF.cs" />
+    <Compile Include="Forms\Info\F004_NoAcceptInfo\F004_NoAcceptInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\F004_NoAcceptInfo\F004_NoAcceptInfo.Designer.cs">
+      <DependentUpon>F004_NoAcceptInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Info\F004_NoAcceptInfo\F004_NoAcceptInfoAF.cs" />
+    <Compile Include="Forms\Info\F005_FailedInfo\F005_FailedInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\F005_FailedInfo\F005_FailedInfo.Designer.cs">
+      <DependentUpon>F005_FailedInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Info\F006_FailedIOInfo\F006_FailedIOInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\F006_FailedIOInfo\F006_FailedIOInfo.designer.cs">
+      <DependentUpon>F006_FailedIOInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Info\F007_FailedReportPrint\F007_FailedReportPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\F007_FailedReportPrint\F007_FailedReportPrint.Designer.cs">
+      <DependentUpon>F007_FailedReportPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Info\F008_shippingList\F008_shippingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Info\F008_shippingList\F008_shippingList.Designer.cs">
+      <DependentUpon>F008_shippingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F201_OutDataParts\F201_OutDataParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F201_OutDataParts\F201_OutDataParts.Designer.cs">
+      <DependentUpon>F201_OutDataParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F201_OutDataParts\F201_OutDataPartsAF.cs" />
+    <Compile Include="Forms\IO\F202_InsideTrans\F202_InsideTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F202_InsideTrans\F202_InsideTrans.Designer.cs">
+      <DependentUpon>F202_InsideTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F202_InsideTrans\F202_InsideTransAF.cs" />
+    <Compile Include="Forms\IO\F203_OutProcessOsrc\F203_OutProcessOsrc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F203_OutProcessOsrc\F203_OutProcessOsrc.Designer.cs">
+      <DependentUpon>F203_OutProcessOsrc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F204_NSupStockTrans\F204_NSupStockTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F204_NSupStockTrans\F204_NSupStockTrans.Designer.cs">
+      <DependentUpon>F204_NSupStockTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F204_NSupStockTrans\F204_NSupStockTransAF.cs" />
+    <Compile Include="Forms\IO\F205_OutDataPartsExchange\F205_OutDataPartsExchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F205_OutDataPartsExchange\F205_OutDataPartsExchange.Designer.cs">
+      <DependentUpon>F205_OutDataPartsExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F207_InsideAcceptanceParts\F207_InsideAcceptanceParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F207_InsideAcceptanceParts\F207_InsideAcceptanceParts.Designer.cs">
+      <DependentUpon>F207_InsideAcceptanceParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F208_DelivAcceptanceDoCode\F208_DelivAcceptanceDoCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F208_DelivAcceptanceDoCode\F208_DelivAcceptanceDoCode.Designer.cs">
+      <DependentUpon>F208_DelivAcceptanceDoCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F210_InsideInProcess\F210_InsideInProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F210_InsideInProcess\F210_InsideInProcess.Designer.cs">
+      <DependentUpon>F210_InsideInProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F211_CompanyDelivProcess\F211_CompanyDelivProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F211_CompanyDelivProcess\F211_CompanyDelivProcess.Designer.cs">
+      <DependentUpon>F211_CompanyDelivProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F211_CompanyDelivProcess\F211_CompanyDelivNotProcessList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F211_CompanyDelivProcess\F211_CompanyDelivNotProcessList.Designer.cs">
+      <DependentUpon>F211_CompanyDelivNotProcessList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F212_DelivBarcode\F212_DelivBarcodeNextProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F212_DelivBarcode\F212_DelivBarcodeNextProcess.Designer.cs">
+      <DependentUpon>F212_DelivBarcodeNextProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F212_DelivBarcode\F212_DelivBarcodeNotProcessList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F212_DelivBarcode\F212_DelivBarcodeNotProcessList.Designer.cs">
+      <DependentUpon>F212_DelivBarcodeNotProcessList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F212_DelivBarcode\F212_DelivBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F212_DelivBarcode\F212_DelivBarcode.Designer.cs">
+      <DependentUpon>F212_DelivBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F216_IntermediateAssemblyResult\F216_IntermediateAssemblyResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F216_IntermediateAssemblyResult\F216_IntermediateAssemblyResult.Designer.cs">
+      <DependentUpon>F216_IntermediateAssemblyResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F219_DocuReprint\F219_DocuReprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F219_DocuReprint\F219_DocuReprint.Designer.cs">
+      <DependentUpon>F219_DocuReprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F206_DelivAcceptanceRoCode\F206_DelivAcceptanceRoCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F206_DelivAcceptanceRoCode\F206_DelivAcceptanceRoCode.Designer.cs">
+      <DependentUpon>F206_DelivAcceptanceRoCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F220_InsideAcceptanceCancel\F220_InsideAcceptanceCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F220_InsideAcceptanceCancel\F220_InsideAcceptanceCancel.Designer.cs">
+      <DependentUpon>F220_InsideAcceptanceCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F223_CancelNSupStockTrans\F223_CancelNSupStockTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F223_CancelNSupStockTrans\F223_CancelNSupStockTrans.Designer.cs">
+      <DependentUpon>F223_CancelNSupStockTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F224_IOCheckList\F224_IOCheckList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F224_IOCheckList\F224_IOCheckList.Designer.cs">
+      <DependentUpon>F224_IOCheckList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F225_InsideTransAccept\F225_InsideTransAccept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F225_InsideTransAccept\F225_InsideTransAccept.Designer.cs">
+      <DependentUpon>F225_InsideTransAccept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F226_DelivSlipReception\F226_DelivSlipReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F226_DelivSlipReception\F226_DelivSlipReception.Designer.cs">
+      <DependentUpon>F226_DelivSlipReception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F227_DocumentPrint\F227_DocumentPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F227_DocumentPrint\F227_DocumentPrint.Designer.cs">
+      <DependentUpon>F227_DocumentPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F227_DocumentPrint\F227_DocumentPrintAF.cs" />
+    <Compile Include="Forms\IO\F228_GoodsTagPrint\F228_GoodsTagPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F228_GoodsTagPrint\F228_GoodsTagPrint.Designer.cs">
+      <DependentUpon>F228_GoodsTagPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F228_GoodsTagPrint\F228_GoodsTagPrintAF.cs" />
+    <Compile Include="Forms\IO\F229_FailedCancel\F229_FailedCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F229_FailedCancel\F229_FailedCancel.Designer.cs">
+      <DependentUpon>F229_FailedCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F230_FailedCancelMaint\F230_FailedCancelMaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F230_FailedCancelMaint\F230_FailedCancelMaint.Designer.cs">
+      <DependentUpon>F230_FailedCancelMaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IO\F231_AcceptApproval\F231_AcceptApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IO\F231_AcceptApproval\F231_AcceptApproval.Designer.cs">
+      <DependentUpon>F231_AcceptApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ord\F404_EachTimeOrd\F404_EachTimeOrd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ord\F404_EachTimeOrd\F404_EachTimeOrd.Designer.cs">
+      <DependentUpon>F404_EachTimeOrd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MstMaint\F601_UintPriceMasterMaint\F601_UintPriceMasterMaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MstMaint\F601_UintPriceMasterMaint\F601_UintPriceMasterMaint.Designer.cs">
+      <DependentUpon>F601_UintPriceMasterMaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MstMaint\F601_UintPriceMasterMaint\F601_UintPriceMasterMaintAF.cs" />
+    <Compile Include="Forms\MstMaint\F602_SupMstMaint\F602_Address.cs" />
+    <Compile Include="Forms\MstMaint\F602_SupMstMaint\F602_ApiAddress.cs" />
+    <Compile Include="Forms\MstMaint\F602_SupMstMaint\F602_SupMstMaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MstMaint\F602_SupMstMaint\F602_SupMstMaint.Designer.cs">
+      <DependentUpon>F602_SupMstMaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MstMaint\F602_SupMstMaint\F602_SupMstMaintAF.cs" />
+    <Compile Include="Forms\MstMaint\F603_CalendarFileMaint\F603_CalendarFileMaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MstMaint\F603_CalendarFileMaint\F603_CalendarFileMaint.Designer.cs">
+      <DependentUpon>F603_CalendarFileMaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MstMaint\F603_CalendarFileMaint\F603_CalendarFileMaintAF.cs" />
+    <Compile Include="Forms\Ord\F401_OrdSourceProcess\F401_OrdSourceProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ord\F401_OrdSourceProcess\F401_OrdSourceProcess.Designer.cs">
+      <DependentUpon>F401_OrdSourceProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ord\F402_OrdMstMaint\F402_OrdMstMaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ord\F402_OrdMstMaint\F402_OrdMstMaint.Designer.cs">
+      <DependentUpon>F402_OrdMstMaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ord\F405_OrderStatusInfo\F405_OrderStatusInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ord\F405_OrderStatusInfo\F405_OrderStatusInfo.Designer.cs">
+      <DependentUpon>F405_OrderStatusInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ord\F406_ProcessUnitPriceInfo\F406_ProcessUnitPriceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ord\F406_ProcessUnitPriceInfo\F406_ProcessUnitPriceInfo.Designer.cs">
+      <DependentUpon>F406_ProcessUnitPriceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Sample\Sample01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ord\F403_OrdMstDInfo\F403_OrdMstDInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Sample\Sample01.Designer.cs">
+      <DependentUpon>Sample01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ord\F403_OrdMstDInfo\F403_OrdMstDInfo.Designer.cs">
+      <DependentUpon>F403_OrdMstDInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MainMenu\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MainMenu\MainMenu.designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SolutionAF\CalendarAF.cs" />
+    <Compile Include="SolutionAF\GroupMstAF.cs" />
+    <Compile Include="SolutionAF\ManufactCommandFileAF.cs" />
+    <Compile Include="SolutionAF\M_BizSkdAF.cs" />
+    <Compile Include="SolutionAF\MW_OrdSkdDMstAF.cs" />
+    <Compile Include="SolutionAF\MW_OrdSkdMstAF.cs" />
+    <Compile Include="SolutionAF\M_CateNameAF.cs" />
+    <Compile Include="SolutionAF\M_STAFFAF.cs" />
+    <Compile Include="SolutionAF\M_StandardTimeAF.cs" />
+    <Compile Include="SolutionAF\M_StayTimeAF.cs" />
+    <Compile Include="SolutionAF\M_SystemUsingMenuAF.cs" />
+    <Compile Include="SolutionAF\M_TrainingHisAF.cs" />
+    <Compile Include="SolutionAF\M_WorkerAF.cs" />
+    <Compile Include="SolutionAF\M_WorkStandardAF.cs" />
+    <Compile Include="SolutionAF\PartsMstAF.cs" />
+    <Compile Include="SolutionAF\ProcessCodeMstAF.cs" />
+    <Compile Include="SolutionAF\ProductMstAF.cs" />
+    <Compile Include="SolutionAF\SupMstAF.cs" />
+    <Compile Include="SolutionAF\UnitPriceMstAF.cs" />
+    <Compile Include="SolutionAF\WTodayScheduleCreateFile.cs" />
+    <EmbeddedResource Include="Forms\EOMProcess\F201E_OutDataParts\F201E_OutDataParts.resx">
+      <DependentUpon>F201E_OutDataParts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EOMProcess\F202E_InsideTrans\F202E_InsideTrans.resx">
+      <DependentUpon>F202E_InsideTrans.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EOMProcess\F203E_OutProcessOsrc\F203E_OutProcessOsrc.resx">
+      <DependentUpon>F203E_OutProcessOsrc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EOMProcess\F204E_NSupStockTrans\F204E_NSupStockTrans.resx">
+      <DependentUpon>F204E_NSupStockTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EOMProcess\F205E_OutDataPartsExchange\F205E_OutDataPartsExchange.resx">
+      <DependentUpon>F205E_OutDataPartsExchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EOMProcess\F206E_DelivAcceptanceRoCode\F206E_DelivAcceptanceRoCode.resx">
+      <DependentUpon>F206E_DelivAcceptanceRoCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EOMProcess\F207E_InsideAcceptanceParts\F207E_InsideAcceptanceParts.resx">
+      <DependentUpon>F207E_InsideAcceptanceParts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EOMProcess\F208E_DelivAcceptanceDoCode\F208E_DelivAcceptanceDoCode.resx">
+      <DependentUpon>F208E_DelivAcceptanceDoCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EOMProcess\F216E_IntermediateAssemblyResult\F216E_IntermediateAssemblyResult.resx">
+      <DependentUpon>F216E_IntermediateAssemblyResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EOMProcess\F220E_InsideAcceptanceCancel\F220E_InsideAcceptanceCancel.resx">
+      <DependentUpon>F220E_InsideAcceptanceCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EOMProcess\F223E_CancelNSupStockTrans\F223E_CancelNSupStockTrans.resx">
+      <DependentUpon>F223E_CancelNSupStockTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info\F002_DelivScheduleList\F002_DelivScheduleList.resx">
+      <DependentUpon>F002_DelivScheduleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info\F003_NoDelivInfo\F003_NoDelivInfo.resx">
+      <DependentUpon>F003_NoDelivInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info\F004_NoAcceptInfo\F004_NoAcceptInfo.resx">
+      <DependentUpon>F004_NoAcceptInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info\F005_FailedInfo\F005_FailedInfo.resx">
+      <DependentUpon>F005_FailedInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info\F006_FailedIOInfo\F006_FailedIOInfo.resx">
+      <DependentUpon>F006_FailedIOInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info\F007_FailedReportPrint\F007_FailedReportPrint.resx">
+      <DependentUpon>F007_FailedReportPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Info\F008_shippingList\F008_shippingList.resx">
+      <DependentUpon>F008_shippingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F201_OutDataParts\F201_OutDataParts.resx">
+      <DependentUpon>F201_OutDataParts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F202_InsideTrans\F202_InsideTrans.resx">
+      <DependentUpon>F202_InsideTrans.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F203_OutProcessOsrc\F203_OutProcessOsrc.resx">
+      <DependentUpon>F203_OutProcessOsrc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F204_NSupStockTrans\F204_NSupStockTrans.resx">
+      <DependentUpon>F204_NSupStockTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F205_OutDataPartsExchange\F205_OutDataPartsExchange.resx">
+      <DependentUpon>F205_OutDataPartsExchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F207_InsideAcceptanceParts\F207_InsideAcceptanceParts.resx">
+      <DependentUpon>F207_InsideAcceptanceParts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F208_DelivAcceptanceDoCode\F208_DelivAcceptanceDoCode.resx">
+      <DependentUpon>F208_DelivAcceptanceDoCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F210_InsideInProcess\F210_InsideInProcess.resx">
+      <DependentUpon>F210_InsideInProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F211_CompanyDelivProcess\F211_CompanyDelivProcess.resx">
+      <DependentUpon>F211_CompanyDelivProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F211_CompanyDelivProcess\F211_CompanyDelivNotProcessList.resx">
+      <DependentUpon>F211_CompanyDelivNotProcessList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F212_DelivBarcode\F212_DelivBarcodeNextProcess.resx">
+      <DependentUpon>F212_DelivBarcodeNextProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F212_DelivBarcode\F212_DelivBarcodeNotProcessList.resx">
+      <DependentUpon>F212_DelivBarcodeNotProcessList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F212_DelivBarcode\F212_DelivBarcode.resx">
+      <DependentUpon>F212_DelivBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F216_IntermediateAssemblyResult\F216_IntermediateAssemblyResult.resx">
+      <DependentUpon>F216_IntermediateAssemblyResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F219_DocuReprint\F219_DocuReprint.resx">
+      <DependentUpon>F219_DocuReprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F206_DelivAcceptanceRoCode\F206_DelivAcceptanceRoCode.resx">
+      <DependentUpon>F206_DelivAcceptanceRoCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F220_InsideAcceptanceCancel\F220_InsideAcceptanceCancel.resx">
+      <DependentUpon>F220_InsideAcceptanceCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F223_CancelNSupStockTrans\F223_CancelNSupStockTrans.resx">
+      <DependentUpon>F223_CancelNSupStockTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F224_IOCheckList\F224_IOCheckList.resx">
+      <DependentUpon>F224_IOCheckList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F225_InsideTransAccept\F225_InsideTransAccept.resx">
+      <DependentUpon>F225_InsideTransAccept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F226_DelivSlipReception\F226_DelivSlipReception.resx">
+      <DependentUpon>F226_DelivSlipReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F227_DocumentPrint\F227_DocumentPrint.resx">
+      <DependentUpon>F227_DocumentPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F228_GoodsTagPrint\F228_GoodsTagPrint.resx">
+      <DependentUpon>F228_GoodsTagPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F229_FailedCancel\F229_FailedCancel.resx">
+      <DependentUpon>F229_FailedCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F230_FailedCancelMaint\F230_FailedCancelMaint.resx">
+      <DependentUpon>F230_FailedCancelMaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IO\F231_AcceptApproval\F231_AcceptApproval.resx">
+      <DependentUpon>F231_AcceptApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ord\F404_EachTimeOrd\F404_EachTimeOrd.resx">
+      <DependentUpon>F404_EachTimeOrd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MstMaint\F601_UintPriceMasterMaint\F601_UintPriceMasterMaint.resx">
+      <DependentUpon>F601_UintPriceMasterMaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MstMaint\F602_SupMstMaint\F602_SupMstMaint.resx">
+      <DependentUpon>F602_SupMstMaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MstMaint\F603_CalendarFileMaint\F603_CalendarFileMaint.resx">
+      <DependentUpon>F603_CalendarFileMaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ord\F401_OrdSourceProcess\F401_OrdSourceProcess.resx">
+      <DependentUpon>F401_OrdSourceProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ord\F402_OrdMstMaint\F402_OrdMstMaint.resx">
+      <DependentUpon>F402_OrdMstMaint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ord\F405_OrderStatusInfo\F405_OrderStatusInfo.resx">
+      <DependentUpon>F405_OrderStatusInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ord\F406_ProcessUnitPriceInfo\F406_ProcessUnitPriceInfo.resx">
+      <DependentUpon>F406_ProcessUnitPriceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Sample\Sample01.resx">
+      <DependentUpon>Sample01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ord\F403_OrdMstDInfo\F403_OrdMstDInfo.resx">
+      <DependentUpon>F403_OrdMstDInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MainMenu\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Content Include="Doc\img\SuperTooltipInfo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Forms\Sample\img\SuperTooltipInfo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R001_IONSupStockTrans.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R002_IONSupStockTrans.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R013_OnlineCompletedDocuStaff.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Reports\R008_DelivSlip.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\R005_InsideTransReturn.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R003_InsideTrans.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R004_InsideTransPaint.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R006_NSupStockTransDocu.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R007_NSupStockTransDocuBarcode.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Reports\R009_DelivAcceptanceRoCodeErr.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R010_FirstProdCheckResult.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R011_NextProcessReport.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R015_AccountsPayableCheckList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R012_IONSupStockTrans.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Reports\R028_DelivBarcodeInPossibleList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R027_DelivBarcodeErrorList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R026_DelivBarcodeNotProcessList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R025_DelivBarcodeNextProcessList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R024_WCompanyInPossibleList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R023_WCompanyErrorList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R022_InsideInNotProcessList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R021_InsideInPaintErrorList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R018_InsideInErrorList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R019_InsideInPaintList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R016_InsideInList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R020_InsideInPaintListPartsOrder.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Reports\R017_InsideInListPartsOrder.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Reports\R029_NSupStockTrans.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R030_InsideTrans.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R032_InsideTransPaint.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R033_ReturnDelivSlip.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R034_InsideTransFailedList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\R035_UntreatedFailedList.flxr">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Doc\SansoBaseHelpDocCommon.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Doc\SansoBaseHelpDocOriginal.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Doc\SansoBaseMessageDoc.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

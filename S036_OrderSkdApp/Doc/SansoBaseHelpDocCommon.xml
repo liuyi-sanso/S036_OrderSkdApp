@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Messages>
+<Message Level1 = "製品区分" Level2 = "0：自販モータ" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "製品区分" Level2 = "1：受注ポンプ" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "製品区分" Level2 = "2：自販ポンプ" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "製品区分" Level2 = "3：貿易ポンプ" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "製品区分" Level2 = "4：特販ポンプ" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "製品区分" Level2 = "5：自販製品(調理器等)" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "製品区分" Level2 = "6：OEM(製品)" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "製品区分" Level2 = "P：部品・商品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "不用機種区分" Level2 = "7：休止移行機種" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "不用機種区分" Level2 = "8：休止機種" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "不用機種区分" Level2 = "9：廃棄機種" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "仕入先区分" Level2 = "G：外注先" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "仕入先区分" Level2 = "K：社内課別" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "仕入先区分" Level2 = "N：加工工程" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "仕入先区分" Level2 = "S：一般仕入先" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "1：一般仕入" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "2：内部仕入れ" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "3：外注仕入れ" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "4：出庫" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "5：客先無償支給" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "6：有償支給" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "7：無償支給" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "8：内部売上" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "F：振替" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "S：生産実績" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "データ区分【D】" Level2 = "U：売上" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "出庫区分【S】" Level2 = "1：完成品出庫" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "出庫区分【S】" Level2 = "2：部品出庫" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "出庫区分【S】" Level2 = "3：不良処分" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "出庫区分【S】" Level2 = "4：仕損" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "出庫区分【S】" Level2 = "5：部品オーダー出庫" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "出庫区分【S】" Level2 = "6：材料不良" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "出庫区分【S】" Level2 = "7：仕掛品生産出庫" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "出庫区分【S】" Level2 = "8：配膳出庫" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "出庫区分【S】" Level2 = "9：調整出庫" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "出庫区分【S】" Level2 = "X：実地棚卸調整" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "納入指示フラッグ" Level2 = "1：確定" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "納入指示フラッグ" Level2 = "空白：内示" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "発注ロット区分【HR】" Level2 = "1：需要予測単位の場合" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "発注ロット区分【HR】" Level2 = "空白：日付で纏める場合" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "発注確定区分【HK】" Level2 = "L：需要予測" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "発注確定区分【HK】" Level2 = "S：作番" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "日程区分【NK】" Level2 = "1：日程管理する" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "日程区分【NK】" Level2 = "9：日程管理しない" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "発注区分【HC】" Level2 = "1：発注する" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "発注区分【HC】" Level2 = "9：発注しない" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "在庫P【Z】" Level2 = "Z：完成品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "在庫P【Z】" Level2 = "空白：素材" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "有償P【Y】" Level2 = "Y：有償" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "有償P【Y】" Level2 = "空白：無し" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "機種在庫区分【ZK】" Level2 = "空白：製品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "機種在庫区分【ZK】" Level2 = "A：商品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "機種在庫区分【ZK】" Level2 = "D：電子倉庫品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "機種在庫区分【ZK】" Level2 = "E：輸入商品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "機種在庫区分【ZK】" Level2 = "I：輸入半完製品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "機種在庫区分【ZK】" Level2 = "P：ポンプ倉庫品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "機種在庫区分【ZK】" Level2 = "S：仕掛品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "機種在庫区分【ZK】" Level2 = "Y：預り品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "機種在庫区分【ZK】" Level2 = "Z：商品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "運送便区分" Level2 = "1：福通" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "運送便区分" Level2 = "2：西濃" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "運送便区分" Level2 = "3：佐川" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "運送便区分" Level2 = "4：ヤマト" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "運送便区分" Level2 = "5：日通" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "運送便区分" Level2 = " ：その他" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000001：単価訂正" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000002：ロイヤリティ" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000009：消費税訂正" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000010：販売協力金" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000011：その他製品" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000099：消費税無コード" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000100：金型売上" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000110：変更改造売上" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000600：モータ値引き" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000700：ポンプ値引き" Level3 = "" Level4 = ""> <value></value> </Message> 
+<Message Level1 = "特別機種コード" Level2 = "000801：運賃" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "000861：ポンプ工賃" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "000871：モータ修理代" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "000881：ポンプ修理代" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "000882：出張点検費" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "000883：工賃" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "000884：交通費" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "000885：撤去費" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "000886：材料費" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "000981：モータ部品" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "000991：ポンプ部品" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "666000：モータ試作" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "特別機種コード" Level2 = "777000：ポンプ試作" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "1-1：生産-需番" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "1-2：生産-試作" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "1-3：生産-手直し" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "1-5：生産-その他" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "1-8：生産-単価訂正" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "1-H：生産-返品" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "2-1：売上-売上" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "2-*：売上-仮単価" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "2-#：売上-売上のみ" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "2-T：売上-単価変更" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "2-2：売上-返品（製造止め）" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "2-3：売上-返品（営業止め）" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "4-A：内部売上-製品出庫" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "4-T：内部売上-直送" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "4-K：内部売上-機種変更" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "4-H：内部売上-返品（倉入）" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "4-S：内部売上-返品（製造止め）" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "営業データ区分【ED】(区分 + 詳細)" Level2 = "4-X：内部売上-調整" Level3 = "" Level4 = ""> <value></value> </Message>
+
+<Message Level1 = "RoHS区分" Level2 = "1:RoHS対応済" Level3 = "" Level4 = ""> <value></value> </Message>
+<Message Level1 = "RoHS区分" Level2 = "5:未着手" Level3 = "" Level4 = ""> <value></value> </Message>
+
+</Messages>

@@ -1,0 +1,921 @@
+<?xml version="1.0"?>
+<Reports>
+  <FormatVersion>1.0 1.0.0.0</FormatVersion>
+  <Report ref="1">
+    <Name>R011_NextProcessReport</Name>
+    <DataSourceName>Main</DataSourceName>
+    <GrowShrinkMode>Access</GrowShrinkMode>
+    <Layout>
+      <Width>11688</Width>
+      <Margin>288</Margin>
+      <MarginTop>288</MarginTop>
+      <MarginRight>288</MarginRight>
+      <MarginBottom>288</MarginBottom>
+    </Layout>
+    <Groups>
+      <Group>
+        <Name>Group1</Name>
+        <GroupBy>特別後工程コード</GroupBy>
+        <Sort>Ascending</Sort>
+      </Group>
+      <Group>
+        <Name>Group2</Name>
+        <GroupBy>部品コード</GroupBy>
+        <Sort>Ascending</Sort>
+      </Group>
+    </Groups>
+    <Sections>
+      <Section>
+        <Name>詳細</Name>
+        <Background type="Solid">
+          <Color>FFFFFFFF</Color>
+        </Background>
+        <SubSections>
+          <SubSection>
+            <Height>16214</Height>
+          </SubSection>
+        </SubSections>
+        <Type>Detail</Type>
+        <AutoHeight>None</AutoHeight>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <SubSections>
+          <SubSection />
+        </SubSections>
+        <Type>Header</Type>
+        <Visible>false</Visible>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <SubSections>
+          <SubSection />
+        </SubSections>
+        <Type>Footer</Type>
+        <Visible>false</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <SubSections>
+          <SubSection />
+        </SubSections>
+        <Type>PageHeader</Type>
+        <Visible>false</Visible>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <SubSections>
+          <SubSection />
+        </SubSections>
+        <Type>PageFooter</Type>
+        <Visible>false</Visible>
+      </Section>
+      <Section>
+        <Name>GroupHeader0</Name>
+        <SubSections>
+          <SubSection />
+        </SubSections>
+        <Type>GroupHeader1</Type>
+        <Visible>false</Visible>
+      </Section>
+      <Section>
+        <Name>GroupFooter0</Name>
+        <SubSections>
+          <SubSection />
+        </SubSections>
+        <Type>GroupFooter1</Type>
+        <Visible>false</Visible>
+      </Section>
+      <Section>
+        <Name>GroupHeader1</Name>
+        <SubSections>
+          <SubSection />
+        </SubSections>
+        <Type>GroupHeader2</Type>
+        <Visible>false</Visible>
+      </Section>
+      <Section>
+        <Name>GroupFooter1</Name>
+        <SubSections>
+          <SubSection />
+        </SubSections>
+        <Type>GroupFooter2</Type>
+        <Visible>false</Visible>
+      </Section>
+    </Sections>
+    <Fields>
+      <TextField>
+        <Name>ラベル451</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Background type="Solid">
+          <Color>FFFFFFFF</Color>
+        </Background>
+        <Section>Detail</Section>
+        <Left>3795</Left>
+        <Top>165</Top>
+        <Width>3750</Width>
+        <Height>360</Height>
+        <Align>JustTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>16</Size>
+          <Bold>true</Bold>
+          <Underline>true</Underline>
+        </Font>
+        <Text>
+          <Value sys="string">次工程確認シート</Value>
+        </Text>
+      </TextField>
+      <Field>
+        <Name>課別コード</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>9360</Left>
+        <Top>285</Top>
+        <Width>1140</Width>
+        <Height>360</Height>
+        <Text>課別コード</Text>
+        <Calculated>true</Calculated>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>16</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Field>
+      <Field>
+        <Name>受払年月日</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>5210</Left>
+        <Top>630</Top>
+        <Width>1950</Width>
+        <Height>285</Height>
+        <Text>=Now()</Text>
+        <Calculated>true</Calculated>
+        <Format>yyyy年MM月dd日</Format>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>12</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Field>
+      <TextField>
+        <Name>ラベル435</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>4200</Left>
+        <Top>675</Top>
+        <Width>915</Width>
+        <Height>210</Height>
+        <Align>JustTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>10</Size>
+          <Bold>true</Bold>
+        </Font>
+        <Text>
+          <Value sys="string">支給日</Value>
+        </Text>
+      </TextField>
+      <ShapeField>
+        <Name>ボックス458</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>574</Left>
+        <Top>1020</Top>
+        <Width>4812</Width>
+        <Height>697</Height>
+        <Shape type="Rectangle" />
+        <Line>
+          <Width>20</Width>
+        </Line>
+      </ShapeField>
+      <ShapeField>
+        <Name>直線464</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>1714</Left>
+        <Top>1020</Top>
+        <Width>0</Width>
+        <Height>697</Height>
+        <Shape type="LineShape">
+          <LineSlant>Down</LineSlant>
+        </Shape>
+      </ShapeField>
+      <ShapeField>
+        <Name>直線847</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>2779</Left>
+        <Top>1020</Top>
+        <Width>0</Width>
+        <Height>697</Height>
+        <Shape type="LineShape">
+          <LineSlant>Down</LineSlant>
+        </Shape>
+      </ShapeField>
+      <Field>
+        <Name>仕入先名</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>2839</Left>
+        <Top>1245</Top>
+        <Width>2460</Width>
+        <Height>270</Height>
+        <Text>仕入先名１</Text>
+        <Calculated>true</Calculated>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>12</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Field>
+      <Field>
+        <Name>特別後工程コード</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>1761</Left>
+        <Top>1248</Top>
+        <Width>960</Width>
+        <Height>270</Height>
+        <Text>特別後工程コード</Text>
+        <Calculated>true</Calculated>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>12</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Field>
+      <TextField>
+        <Name>ラベル463</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>634</Left>
+        <Top>1263</Top>
+        <Width>1020</Width>
+        <Height>240</Height>
+        <Align>JustTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>10</Size>
+          <Bold>true</Bold>
+        </Font>
+        <Text>
+          <Value sys="string">次工程</Value>
+        </Text>
+      </TextField>
+      <ShapeField>
+        <Name>直線400</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>4369</Left>
+        <Top>1815</Top>
+        <Width>0</Width>
+        <Height>1124</Height>
+        <Shape type="LineShape">
+          <LineSlant>Down</LineSlant>
+        </Shape>
+      </ShapeField>
+      <ShapeField>
+        <Name>ボックス383</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>574</Left>
+        <Top>1816</Top>
+        <Width>7932</Width>
+        <Height>322</Height>
+        <Shape type="Rectangle" />
+        <Line>
+          <Width>20</Width>
+        </Line>
+      </ShapeField>
+      <TextField>
+        <Name>ラベル428</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>5734</Left>
+        <Top>1860</Top>
+        <Width>1395</Width>
+        <Height>240</Height>
+        <Align>JustTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>10</Size>
+        </Font>
+        <Text>
+          <Value sys="string">部品名</Value>
+        </Text>
+      </TextField>
+      <TextField>
+        <Name>ラベル426</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>1759</Left>
+        <Top>1861</Top>
+        <Width>1395</Width>
+        <Height>240</Height>
+        <Align>JustTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>10</Size>
+        </Font>
+        <Text>
+          <Value sys="string">機種名</Value>
+        </Text>
+      </TextField>
+      <ShapeField>
+        <Name>ボックス387</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>574</Left>
+        <Top>2145</Top>
+        <Width>7932</Width>
+        <Height>802</Height>
+        <Shape type="Rectangle" />
+        <Line>
+          <Width>20</Width>
+        </Line>
+      </ShapeField>
+      <Field>
+        <Name>部品名</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>4429</Left>
+        <Top>2205</Top>
+        <Width>4020</Width>
+        <Height>330</Height>
+        <Text>部品名</Text>
+        <Calculated>true</Calculated>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>16</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Field>
+      <Field>
+        <Name>機種名</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>694</Left>
+        <Top>2370</Top>
+        <Width>3570</Width>
+        <Height>345</Height>
+        <Text>機種名</Text>
+        <Calculated>true</Calculated>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>16</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Field>
+      <Field>
+        <Name>図面番号</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>4429</Left>
+        <Top>2560</Top>
+        <Width>4020</Width>
+        <Height>315</Height>
+        <Text>図面番号</Text>
+        <Calculated>true</Calculated>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>16</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Field>
+      <ShapeField>
+        <Name>ボックス394</Name>
+        <Tag sys="string" />
+        <Background type="Solid">
+          <Color>FFFFFFFF</Color>
+        </Background>
+        <Section>Detail</Section>
+        <Left>574</Left>
+        <Top>3067</Top>
+        <Width>4302</Width>
+        <Height>322</Height>
+        <Shape type="Rectangle" />
+        <Line>
+          <Width>20</Width>
+        </Line>
+      </ShapeField>
+      <TextField>
+        <Name>ラベル427</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>1099</Left>
+        <Top>3120</Top>
+        <Width>1590</Width>
+        <Height>240</Height>
+        <Align>JustTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>10</Size>
+        </Font>
+        <Text>
+          <Value sys="string">部品コード</Value>
+        </Text>
+      </TextField>
+      <TextField>
+        <Name>ラベル433</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>3589</Left>
+        <Top>3120</Top>
+        <Width>795</Width>
+        <Height>225</Height>
+        <Align>JustTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>10</Size>
+        </Font>
+        <Text>
+          <Value sys="string">数量</Value>
+        </Text>
+      </TextField>
+      <ShapeField>
+        <Name>ボックス395</Name>
+        <Tag sys="string" />
+        <Background type="Solid">
+          <Color>FFFFFFFF</Color>
+        </Background>
+        <Section>Detail</Section>
+        <Left>574</Left>
+        <Top>3397</Top>
+        <Width>4302</Width>
+        <Height>562</Height>
+        <Shape type="Rectangle" />
+        <Line>
+          <Width>20</Width>
+        </Line>
+      </ShapeField>
+      <Field>
+        <Name>部品コード</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>634</Left>
+        <Top>3450</Top>
+        <Width>2430</Width>
+        <Height>405</Height>
+        <Text>部品コード</Text>
+        <Calculated>true</Calculated>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>16</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Field>
+      <Field>
+        <Name>数量</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>3184</Left>
+        <Top>3450</Top>
+        <Width>1590</Width>
+        <Height>405</Height>
+        <Text>数量</Text>
+        <Calculated>true</Calculated>
+        <Format>#,##0.00;-#,##0.00;#,###</Format>
+        <Align>RightTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>16</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Field>
+      <ShapeField>
+        <Name>直線947</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>3124</Left>
+        <Top>3060</Top>
+        <Width>0</Width>
+        <Height>899</Height>
+        <ZOrder>2</ZOrder>
+        <Shape type="LineShape">
+          <LineSlant>Down</LineSlant>
+        </Shape>
+      </ShapeField>
+      <ShapeField>
+        <Name>ボックス905</Name>
+        <Tag sys="string" />
+        <Background type="Solid">
+          <Color>FFFFFFFF</Color>
+        </Background>
+        <Section>Detail</Section>
+        <Left>8055</Left>
+        <Top>3975</Top>
+        <Width>1368</Width>
+        <Height>1248</Height>
+        <Shape type="Rectangle" />
+        <Line>
+          <Width>20</Width>
+        </Line>
+      </ShapeField>
+      <ShapeField>
+        <Name>ボックス906</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>9424</Left>
+        <Top>3975</Top>
+        <Width>1353</Width>
+        <Height>1248</Height>
+        <Shape type="Rectangle" />
+        <Line>
+          <Width>20</Width>
+        </Line>
+      </ShapeField>
+      <TextField>
+        <Name>ラベル907</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>8113</Left>
+        <Top>4039</Top>
+        <Width>480</Width>
+        <Height>240</Height>
+        <Align>LeftTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>10</Size>
+          <Bold>true</Bold>
+        </Font>
+        <Text>
+          <Value sys="string">承認</Value>
+        </Text>
+      </TextField>
+      <TextField>
+        <Name>ラベル908</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>9495</Left>
+        <Top>4039</Top>
+        <Width>675</Width>
+        <Height>240</Height>
+        <Align>LeftTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>10</Size>
+          <Bold>true</Bold>
+        </Font>
+        <Text>
+          <Value sys="string">発行者</Value>
+        </Text>
+      </TextField>
+      <ShapeField>
+        <Name>ボックス843</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>570</Left>
+        <Top>4073</Top>
+        <Width>7242</Width>
+        <Height>322</Height>
+        <Shape type="Rectangle" />
+        <Line>
+          <Width>20</Width>
+        </Line>
+      </ShapeField>
+      <TextField>
+        <Name>ラベル845</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>3229</Left>
+        <Top>4125</Top>
+        <Width>1590</Width>
+        <Height>240</Height>
+        <Align>JustTop</Align>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>10</Size>
+        </Font>
+        <Text>
+          <Value sys="string">処置内容</Value>
+        </Text>
+      </TextField>
+      <ShapeField>
+        <Name>ボックス844</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>570</Left>
+        <Top>4402</Top>
+        <Width>7242</Width>
+        <Height>802</Height>
+        <Shape type="Rectangle" />
+        <Line>
+          <Width>20</Width>
+        </Line>
+      </ShapeField>
+      <Field>
+        <Name>処置内容</Name>
+        <Tag sys="string" />
+        <Border>
+          <Left>
+            <Width>15</Width>
+          </Left>
+          <Top>
+            <Width>15</Width>
+          </Top>
+          <Right>
+            <Width>15</Width>
+          </Right>
+          <Bottom>
+            <Width>15</Width>
+          </Bottom>
+        </Border>
+        <Section>Detail</Section>
+        <Left>684</Left>
+        <Top>4470</Top>
+        <Width>7020</Width>
+        <Height>675</Height>
+        <Text>処置内容</Text>
+        <Calculated>true</Calculated>
+        <Font>
+          <Name>ＭＳ Ｐゴシック</Name>
+          <Size>16</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Field>
+      <ShapeField>
+        <Name>直線77</Name>
+        <Tag sys="string" />
+        <Section>Detail</Section>
+        <Left>0</Left>
+        <Top>5387</Top>
+        <Width>11215</Width>
+        <Height>0</Height>
+        <Shape type="LineShape">
+          <LineSlant>Down</LineSlant>
+        </Shape>
+        <Line>
+          <Style>Dot</Style>
+        </Line>
+      </ShapeField>
+    </Fields>
+  </Report>
+</Reports>

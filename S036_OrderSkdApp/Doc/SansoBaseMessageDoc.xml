@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Messages>
+<Message code="I0001" cate = "INFO" paramnum = "1"> <value>（I0001）{0}の登録が完了しました</value> </Message> 
+<Message code="I0002" cate = "INFO" paramnum = "1"> <value>（I0002）{0}の更新が完了しました</value> </Message> 
+<Message code="I0003" cate = "INFO" paramnum = "1"> <value>（I0003）{0}の削除が完了しました</value> </Message> 
+<Message code="I0004" cate = "INFO" paramnum = "1"> <value>（I0004）{0}EXCEL出力が完了しました</value> </Message> 
+<Message code="I0005" cate = "INFO" paramnum = "0"> <value>（I0005）検索結果が0件です</value> </Message> 
+<Message code="I0006" cate = "INFO" paramnum = "0"> <value>（I0006）検索が完了しました</value> </Message> 
+<Message code="I0007" cate = "INFO" paramnum = "0"> <value>（I0007）データが見つかりません</value> </Message> 
+<Message code="I0008" cate = "INFO" paramnum = "1"> <value>（I0008）{0}中止しました</value> </Message> 
+<Message code="I0009" cate = "INFO" paramnum = "1"> <value>（I0009）{0}完了しました</value> </Message> 
+<Message code="I0010" cate = "INFO" paramnum = "0"> <value>（I0010）検索できません</value> </Message> 
+<Message code="I0011" cate = "INFO" paramnum = "1"> <value>（I0011）検索が完了しました。{0}件です。</value> </Message>
+
+  
+<Message code="W0001" cate = "WARN" paramnum = "1"> <value>（W0001）{0}に登録されていません</value> </Message> 
+<Message code="W0002" cate = "WARN" paramnum = "2"> <value>（W0002）{0}が{1}に登録されていません</value> </Message> 
+<Message code="W0003" cate = "WARN" paramnum = "3"> <value>（W0003）{0}は{1}桁以上、{2}桁以下にしてください</value> </Message> 
+<Message code="W0004" cate = "WARN" paramnum = "2"> <value>（W0004）{0}は{1}桁以下にしてください</value> </Message> 
+<Message code="W0005" cate = "WARN" paramnum = "2"> <value>（W0005）{0}は{1}桁以上にしてください</value> </Message> 
+<Message code="W0006" cate = "WARN" paramnum = "1"> <value>（W0006）{0}は正数を入力して下さい</value> </Message> 
+<Message code="W0007" cate = "WARN" paramnum = "1"> <value>（W0007）{0}は必須入力です</value> </Message> 
+<Message code="W0008" cate = "WARN" paramnum = "1"> <value>（W0008）{0}が重複しています</value> </Message> 
+<Message code="W0009" cate = "WARN" paramnum = "3"> <value>（W0009）{0}は半角{1}文字以上、{2}文字以内にしてください</value> </Message> 
+<Message code="W0010" cate = "WARN" paramnum = "2"> <value>（W0010）{0}は半角{1}文字以内にしてください</value> </Message> 
+<Message code="W0011" cate = "WARN" paramnum = "2"> <value>（W0011）{0}は半角{1}文字以上にしてください</value> </Message> 
+<Message code="W0012" cate = "WARN" paramnum = "3"> <value>（W0012）{0}は{1}～{2}の範囲で入力して下さい</value> </Message> 
+<Message code="W0013" cate = "WARN" paramnum = "1"> <value>（W0013）{0}はリストから選択してください</value> </Message> 
+<Message code="W0014" cate = "WARN" paramnum = "2"> <value>（W0014）{0}は{1}を超えています</value> </Message> 
+<Message code="W0015" cate = "WARN" paramnum = "1"> <value>（W0015）{0}が間違っています。確認してください</value> </Message> 
+<Message code="W0016" cate = "WARN" paramnum = "1"> <value>（W0016）{0}は入力できません</value> </Message> 
+<Message code="W0017" cate = "WARN" paramnum = "1"> <value>（W0017）{0}データがありません</value> </Message> 
+<Message code="W0018" cate = "WARN" paramnum = "0"> <value>（W0018）使用禁止文字が含まれています</value> </Message> 
+<Message code="W0019" cate = "WARN" paramnum = "1"> <value>（W0019）{0}数値を入力してください</value> </Message> 
+<Message code="W0020" cate = "WARN" paramnum = "1"> <value>（W0020）{0}完了していません</value> </Message> 
+<Message code="W0021" cate = "WARN" paramnum = "1"> <value>（W0021）{0}の整合がとれていません。確認してください</value> </Message> 
+<Message code="W0022" cate = "WARN" paramnum = "3"> <value>（W0022）{0}は半角で{1}文字、全角で{2}文字以内にしてください</value> </Message>
+ 
+<Message code="E0001" cate = "ERR" paramnum = "1"> <value>（E0001）{0}更新時にエラーが発生しました</value> </Message> 
+<Message code="E0002" cate = "ERR" paramnum = "1"> <value>（E0002）{0}にデータが残っているため削除できません</value> </Message> 
+<Message code="E0003" cate = "ERR" paramnum = "1"> <value>（E0003）既に{0}は削除されています</value> </Message> 
+<Message code="E0004" cate = "ERR" paramnum = "0"> <value>（E0004）他の端末でデータが修正されています、もう一度やり直してください</value> </Message> 
+<Message code="E0005" cate = "ERR" paramnum = "1"> <value>（E0005）{0}登録に失敗しました</value> </Message> 
+<Message code="E0006" cate = "ERR" paramnum = "1"> <value>（E0006）{0}修正が失敗しました</value> </Message> 
+<Message code="E0007" cate = "ERR" paramnum = "1"> <value>（E0007）{0}削除が失敗しました</value> </Message> 
+<Message code="E0008" cate = "ERR" paramnum = "1"> <value>（E0008）{0}エラーが発生しました</value> </Message>
+
+
+  <!--ソリューションごとに追加してください　F**** -->
+
+  <Message code="F0001" cate = "ERR" paramnum = "0">
+    <value>（F0001）SQL実行が失敗しました。</value>
+  </Message>
+
+  <Message code="F0002" cate = "ERR" paramnum = "0">
+    <value>（F0002）データ読込処理に失敗しました。</value>
+  </Message>
+
+
+
+</Messages>

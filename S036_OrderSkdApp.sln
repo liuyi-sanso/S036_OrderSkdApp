@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1169
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S036_OrderSkdApp", "S036_OrderSkdApp\S036_OrderSkdApp.csproj", "{307985B0-201E-4ED8-8540-2964E2C95A49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{307985B0-201E-4ED8-8540-2964E2C95A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{307985B0-201E-4ED8-8540-2964E2C95A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{307985B0-201E-4ED8-8540-2964E2C95A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{307985B0-201E-4ED8-8540-2964E2C95A49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BEAC653-03D3-4CB0-A457-4E2063B3DD8D}
+	EndGlobalSection
+EndGlobal
